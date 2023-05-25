@@ -35,8 +35,6 @@ jobs:
         echo "NEW VERSION: $NEW_VERSION!!!"
         
     - name: Build docker image
-      env:
-        DOCKER_VERSION: ${{  }}
       run: |
         docker build -t alexsxander/docker_graphql:0.0.2 .
     - name: Push docker image
